@@ -10,6 +10,11 @@ body{
 .fsff{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+    font-weight: 600;
+}
+
+img{
+    max-width:100%;
 }
 
 .mb-0{
@@ -27,15 +32,32 @@ body{
 .mb-3{
     margin-bottom: 24px;
 }
+.mr-3{
+    margin-right: 24px;
+}
 .mb-4{
     margin-bottom: 32px;
+}
+.mt-5{
+    margin-top: 40px;
 }
 .mb-5{
     margin-bottom: 40px;
 }
-.mt-7{
-    margin-top: 56px;
+.mb-6{
+    margin-bottom: 48px;
 }
+.py-7{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.pt-7{
+    padding-top: 56px;
+}
+.pb-10{
+    padding-bottom: 160px;
+}
+
 
 .fz-xs{
     font-size: 20px;
@@ -56,9 +78,22 @@ body{
 .lh-3{
     line-height: 84px;
 }
-.lh-4{
 
+.d-flex{
+    display: flex;
 }
+
+.text-white{
+    color: #fff;
+}
+
+.p-font-style{
+    line-height: 30px;
+    font-size: 20px;
+    font-style:normal;
+}
+
+/* main css start  */
 
 .container{
     max-width: 1200px;
@@ -78,13 +113,12 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 /* .header{
-    max-width: 1920px;
-    margin:0 auto;
+    width: 1920px;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
     height: 958px;
     background-size: contain;
-    background-repeat: no-repeat;
 } */
 
 .wrap{
@@ -93,10 +127,9 @@ body{
     color: #fff;
     max-width: 100%;
 }
-
-.wrap span p{
-    text-align: left;
-    font-size: 24px;
+.wrap p{
+    max-width: 283px;
+    margin: 0 auto;
 }
 
 .title{
@@ -105,9 +138,6 @@ body{
     line-height: 106px;
 }
 
-.social-media{
-    display: flex;
-}
 
 /* header css end */
 
@@ -125,11 +155,81 @@ body{
     max-width: 100%;
 }
 
-.personal-info{
-    font-weight: 600;
-}
-
 .experience span{
     font-size: 40px;
     color: #891818;
+}
+
+/* about css end  */
+.section{
+    text-align: center;
+    background-color: #000;
+    color:#fff; 
+} 
+.brand{
+    margin:0 auto;
+}
+.brand h2{
+    margin-bottom: 12px;
+}
+
+.picture{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.picture img{
+    opacity: 1;
+}
+.picture li img:hover{
+    transition: 1.5s;
+    opacity: 2;
+    -webkit-filter:invert(2);
+}
+
+.item{
+    margin-top: 68px;
+    width: 100%;
+}
+
+/* section css end  */
+.pieces{
+    text-align: center;
+}
+
+.works{
+    flex-wrap: wrap;
+    margin-bottom: 144px;
+}
+
+.works img{
+    opacity: 1;
+}
+.works img:hover{
+    opacity: 0.7;
+    transition: 0.8s;
+    border-radius: 25px;
+    transform: scale(0.9);
+}
+
+.poster{
+    width: 33.333%;
+}
+
+.works h4 {
+    text-align: center;
+    font-style: normal;
+}
+
+li h4 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.photography{
+    width: 50%;
+    margin: 48px 0;
+}
+
+.footer{
+    padding: 64px 0;
 }
