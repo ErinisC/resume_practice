@@ -1,20 +1,21 @@
-*{
+*, *::before, *::after{
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 .fsff{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-style: italic;
     font-weight: 600;
 }
 
 img{
     max-width:100%;
+    display: block;
 }
 
 .mb-0{
@@ -69,16 +70,6 @@ img{
     font-size: 64px;
 }
 
-.lh-1{
-    line-height: 36px;
-}
-.lh-2{
-    line-height: 42px;
-}
-.lh-3{
-    line-height: 84px;
-}
-
 .d-flex{
     display: flex;
 }
@@ -101,35 +92,28 @@ img{
 }
 
 .header{
-    max-width: 1920px;
-    margin:0 auto;
+    /* max-width: 1920px; */
+    /* margin:0 auto; */
     background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png") center;
-    height: calc(89vh);
+    /* height: calc(89vh); */
+    height: 958px;
+    /* 由於每個人的螢幕尺寸不同，不同裝置呈現上會不太一樣，所以 .header 可以依設計稿設定高度 958px，這樣不同人瀏覽時會較一致 */
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #707070;
-    opacity: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    /* background-size: contain; */
 }
 
-/* .header{
-    width: 1920px;
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
-    height: 958px;
-    background-size: contain;
-} */
 
+ /* 在 .header 已經有設定水平垂直置中*/
 .wrap{
     /* width: 304px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* max-width: 100%; */ 
     color: #fff;
-    max-width: 100%;
-}
-.wrap p{
-    max-width: 283px;
-    margin: 0 auto;
 }
 
 .title{
@@ -137,7 +121,6 @@ img{
     font-weight: 900;
     line-height: 106px;
 }
-
 
 /* header css end */
 
@@ -187,8 +170,7 @@ img{
 }
 
 .item{
-    margin-top: 68px;
-    width: 100%;
+    margin-top: 68px; 
 }
 
 /* section css end  */
@@ -218,6 +200,7 @@ img{
 .works h4 {
     text-align: center;
     font-style: normal;
+    margin-top: 16px;
 }
 
 li h4 a{
@@ -232,4 +215,9 @@ li h4 a{
 
 .footer{
     padding: 64px 0;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #fff;
 }
